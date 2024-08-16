@@ -1,1 +1,369 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: rgb(246, 247, 249);
+}
 
+header{
+    display: flex;
+    flex-direction: row;
+    min-height: 90px;
+    background: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 8px 8px rgba(217, 217, 217, 0.24);
+    text-align: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Шапка займёт всю ширину окна браузера */
+    z-index: 1000; /* Высокое значение, чтобы шапка была всегда на первом плане */
+  }
+.header{
+    display: flex;
+    flex-direction: row;
+    padding-left: 23%;
+}
+body{
+    display: block;
+    margin: 0px;
+    background: rgb(246, 247, 249);
+}
+main{
+    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-left: 25%;
+}
+
+.h1nav{
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 25px;
+}
+.ullogo{
+    text-align: left;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+ul,li{
+    list-style: none;
+    font-size: 25px;
+
+}
+.ul-nav, .il-nav{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 5px;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    text-align: center;
+    font-size: 40px; 
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    font-size: 30px;
+    text-align: justify;
+}
+hr{
+    align-items: center;
+    width: 1000px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    min-height: 90px;
+    background: rgba(255, 255, 255);
+    box-shadow: 0px 8px 8px rgba(217, 217, 217, 0.24);
+    text-align: center;
+    padding-left: 850px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.wrapper1{
+    max-height: 1000px;
+    width: 684px;
+    border: 1px solid rgb(246, 247, 249);
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper1 .item{
+    width: 684px;
+    height: 1000px;
+    line-height: 0px;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.24);
+    margin-right: 2px;
+}
+.wrapper{
+    max-height: 684px;
+    width: 1000px;
+    border: 1px solid rgb(246, 247, 249);
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper .item{
+    width: 1000px;
+    height: 684px;
+    line-height: 0px;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.24);
+    margin-right: 2px;
+}
+/* выпадающее меню */
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  background-color: rgba(60, 42, 152, 0.753);
+  text-align: left;
+  padding: 0%;
+  margin-top: 30px;
+  opacity: 1;
+  display: block;
+  width: auto;
+  z-index: 1;
+}
+
+.dropdown >li{
+    margin-top: 12px;
+    font-size: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown >li:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.li-dropdown-first{
+    padding-top: 22px;
+}
+
+.li-dropdown-last{
+    padding-bottom: 22px;
+}
+.button-start{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 16px;
+    border: 0px;
+    background: rgba(27, 89, 131, 0.91);
+    color: rgb(255, 255, 255);
+    width: 228px;
+    height: 59px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Lusitana', serif;
+    margin-left: 42%;
+    margin-top: 12px;
+}
+
+.button-start >a{
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0%;
+}
+
+.button-start >a:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.a-dropdown{
+    color: rgb(255, 255, 255);
+}
+.a-dropdown:hover{
+    color: rgb(255, 255, 255);
+}
+.dfooter{
+    display: flex;
+    flex-direction: column;
+}
+
+/* */
+@media(max-width: 760px) {
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%; /* Шапка займёт всю ширину окна браузера */
+        z-index: 1000; /* Высокое значение, чтобы шапка была всегда на первом плане */
+        padding: 0%;
+        margin: 0%;
+    }
+    .header{
+        padding-left: 0%;
+    }
+
+    .imglogo{
+        display: none;
+      }
+    .plogo{
+        display: none;
+    }
+    .h1nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: auto;
+    }
+    ul,li{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+        width: 60%;
+        padding-left: 10%;
+      }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    body{
+        width: 400px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30%;
+        width: auto;
+    }
+    .info{
+        width: auto;
+        font-size: 15px;
+        text-align: justify;
+    }
+    img {
+        width: 300px;
+        height: 205px;
+      }
+      video{
+        width: 300px;
+        height: 205px;
+      }
+      hr{
+        width: 300px;
+      }
+      .wrapper1{
+        width: 300px;
+        height: 424px;
+      }
+      .wrapper1 .item{
+        width: 300px;
+        height: 424px;
+      }
+      .wrapper1 .item>img{
+        width: 300px;
+        height: 424px;
+      }
+      .wrapper{
+        width: 300px;
+        height: 205px;
+      }
+      .wrapper .item{
+        width: 300px;
+        height: 205px;
+      }
+      .wrapper .item>img{
+        width: 300px;
+        height: 205px;
+      }
+      footer{
+        width: 100%;
+        padding-left: 30%;
+      }
+      .fimg{
+        width: 50px;
+        height: 50px;
+      }
+
+    .dropdown{
+        width: 100px;
+    }
+      
+.dropdown >li{
+    margin-top: 12px;
+    font-size: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown >li:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.li-dropdown-first{
+    padding-top: 22px;
+}
+
+.li-dropdown-last{
+    padding-bottom: 22px;
+}
+.button-start{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 16px;
+    border: 0px;
+    background: rgba(27, 89, 131, 0.91);
+    color: rgb(255, 255, 255);
+
+    height: 59px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Lusitana', serif;
+    margin-left: 42%;
+    margin-top: 12px;
+}
+
+.button-start >a{
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0%;
+}
+
+.button-start >a:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.a-dropdown{
+    color: rgb(255, 255, 255);
+}
+.a-dropdown:hover{
+    color: rgb(255, 255, 255);
+}
+}
