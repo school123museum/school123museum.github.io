@@ -273,7 +273,7 @@ ul li ul:hover {
         width: auto;
         display: flex;
         justify-content:flex-start;
-        padding-right: 30%;
+        padding-right: 50%;
       }
     h2{
         font-size: 17px;
@@ -290,7 +290,7 @@ ul li ul:hover {
         justify-content:flex-start;
         padding-top: 30%;
         width: auto;
-        padding-right: 30%;
+        padding-right: 50%;
     }
     p{
         width: 300px;
