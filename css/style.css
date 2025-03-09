@@ -241,15 +241,13 @@ ul li ul:hover {
     header{
         position: fixed;
         top: 0;
-        width: auto; /* Шапка займёт всю ширину окна браузера */
+        width: 100%; /* Шапка займёт всю ширину окна браузера */
         z-index: 1000; /* Высокое значение, чтобы шапка была всегда на первом плане */
         padding: 0%;
         margin: 0%;
     }
     .header{
         padding-left: 0%;
-        display: flex;
-        justify-content:flex-start;
     }
 
     .imglogo{
@@ -261,8 +259,7 @@ ul li ul:hover {
     .h1nav{
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
-        padding-top: 0;
+        padding: 0;
         width: auto;
     }
     ul,li{
@@ -270,10 +267,8 @@ ul li ul:hover {
     }
     h1{
         font-size: 20px;
-        width: auto;
-        display: flex;
-        justify-content:flex-start;
-        padding-right: 50%;
+        width: 60%;
+        padding-left: 10%;
       }
     h2{
         font-size: 17px;
@@ -282,18 +277,14 @@ ul li ul:hover {
         font-size: 15px;
     }
     body{
-        width: auto;
+        width: 400px;
     }
     main{
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
+        justify-content: center;
         padding-top: 30%;
         width: auto;
-        padding-right: 50%;
-    }
-    p{
-        width: 300px;
     }
     .info{
         width: auto;
@@ -309,7 +300,7 @@ ul li ul:hover {
         height: 205px;
       }
       hr{
-        width: 150px;
+        width: 300px;
       }
       .wrapper1{
         width: 300px;
@@ -336,7 +327,7 @@ ul li ul:hover {
         height: 205px;
       }
       footer{
-        width: auto;
+        width: 100%;
         padding-left: 30%;
       }
       .fimg{
