@@ -35,6 +35,10 @@ main{
     padding-left: 25%;
 }
 
+.boldtext {
+    font-weight: 600;
+  }
+
 .h1nav{
     align-items: center;
     padding-left: 5px;
@@ -193,6 +197,28 @@ ul li ul:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0%;
+}
+
+  .wrapper1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+    white-space: nowrap;
+  }
+  
+  .wrapper{
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+    white-space: nowrap;
+  }
+
+  .item::-webkit-scrollbar-thumb {
+    border-radius: 10px;
 }
 
 .button-start >a:hover{
