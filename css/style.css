@@ -22,7 +22,7 @@ header {
 .header{
     display: flex;
     flex-direction: row;
-    padding-left: 23%;
+    padding-left: 0%;
 }
 body{
     display: block;
